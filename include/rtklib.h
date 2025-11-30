@@ -164,7 +164,7 @@ extern "C" {
 
 #ifdef ENAGLO
 #define MINPRNGLO   1                   /* min satellite slot number of GLONASS */
-#define MAXPRNGLO   27                  /* max satellite slot number of GLONASS */
+#define MAXPRNGLO   28                  /* max satellite slot number of GLONASS */
 #define NSATGLO     (MAXPRNGLO-MINPRNGLO+1) /* number of GLONASS satellites */
 #define NSYSGLO     1
 #else

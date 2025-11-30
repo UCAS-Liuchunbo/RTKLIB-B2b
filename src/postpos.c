@@ -322,7 +322,7 @@ static void update_B2b_ssr(gtime_t time, int format)
             satno2id(i, satid);
             if (!B2braw.nav.B2bssr[i].update) continue;
             if (B2braw.num_PPPB2BINF02 != 0) {
-                if (timediff(time, B2braw.time) < -1E-3) continue;
+                //if (timediff(time, B2braw.time) < -1E-3) continue;
                 if (abs(timediff(B2braw.nav.B2bssr[i].t0[0], navs.B2bssr[i].t0[0])) < 1E-3) {
                     if (!checkout_B2beph(&B2braw.nav.B2bssr[i], &navs.B2bssr[i])) {
                         printf("error: Prn(%d) B2b_Eph is different from before one!", B2braw.geoprn);
@@ -343,7 +343,7 @@ static void update_B2b_ssr(gtime_t time, int format)
             } 
 
             if (B2braw.num_PPPB2BINF03 != 0) {
-                if (timediff(time, B2braw.time) < -1E-3) continue;
+                //if (timediff(time, B2braw.time) < -1E-3) continue;
 
                 if (abs(timediff(B2braw.nav.B2bssr[i].t0[1], navs.B2bssr[i].t0[1])) < 1E-3) {
                     if (!checkout_B2bcbia(&B2braw.nav.B2bssr[i], &navs.B2bssr[i])) {
@@ -365,7 +365,7 @@ static void update_B2b_ssr(gtime_t time, int format)
             }
 
             if (B2braw.num_PPPB2BINF04 != 0) {
-                if (timediff(time, B2braw.time) < -1E-3) continue;
+                //if (timediff(time, B2braw.time) < -1E-3) continue;
 
                 if (abs(timediff(B2braw.nav.B2bssr[i].t0[2], navs.B2bssr[i].t0[2])) < 1E-3) {
                     if (!checkout_B2bclk(&B2braw.nav.B2bssr[i], &navs.B2bssr[i])) {
