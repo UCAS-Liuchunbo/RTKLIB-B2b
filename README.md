@@ -93,6 +93,9 @@ If you use RTKLIB-B2b in your research, please cite our paper:
 ℹ️ ​**Detailed description in the [User Manual](manual/RTKLIB-B2b_UserManual.pdf).**  
 ℹ️ ​**Developers in China: https://gitee.com/liu-chunbobo/RTKLIB-B2b.git**
 
+## 🙏 Acknowledgements
+We would like to thank **Xin Xu** from China University of Mining and Technology (Beijing) for providing valuable suggestions on software development and testing, and for assisting with extensive testing efforts.He continues to offer invaluable advice for the software's maintenance. If you encounter any issues while using the project, please feel free to contact us.
+
 ## 📜 License
 
 [![GPLv3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
