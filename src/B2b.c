@@ -545,7 +545,7 @@ extern void output_B2bInfo2(raw_t *raw, nav_t *nav) {
     time2epoch(raw->time, m_epoch);
 
     // Get udi and t0 of the first valid satellite (also update satnum)
-    for (int i = 0; i < MAXSAT; i++) {
+    for (int i = 1; i < MAXSAT; i++) {
         const B2bssr_t *b2b = &nav->B2bssr[i];
         if (b2b->update == 0) continue;
         satnum++;
@@ -588,7 +588,7 @@ extern void output_B2bInfo3(raw_t *raw, nav_t *nav) {
     time2epoch(raw->time, m_epoch);
 
     // Get udi and t0 of the first valid satellite (also update satnum)
-    for (int i = 0; i < MAXSAT; i++) {
+    for (int i = 1; i < MAXSAT; i++) {
         const B2bssr_t *b2b = &nav->B2bssr[i];
         if (b2b->update == 0) continue;
         satnum++;

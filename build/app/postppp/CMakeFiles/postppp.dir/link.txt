@@ -1,1 +1,0 @@
-/usr/bin/gcc  -g -g   CMakeFiles/postppp.dir/postppp.c.o  -o ../../../bin/postppp  ../../../lib/libB2bLib.a -lm -lpthread 

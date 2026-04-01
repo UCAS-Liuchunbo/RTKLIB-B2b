@@ -1,1 +1,0 @@
-/usr/bin/gcc  -g -g   CMakeFiles/postdecoder.dir/postdecoder.c.o  -o ../../../bin/postdecoder  ../../../lib/libB2bLib.a -lm -lpthread 

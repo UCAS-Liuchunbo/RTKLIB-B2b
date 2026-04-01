@@ -1,1 +1,0 @@
-/usr/bin/g++  -g   CMakeFiles/run_decoder.dir/run_decoder.cpp.o  -o ../../../bin/run_decoder  ../../../lib/libB2bLib.a -lm -lpthread 

@@ -1,23 +1,24 @@
-# RTKLIB-B2b Application
-An open-source software toolkit for decoding and positioning using BeiDou-3 (BDS-3) PPP-B2b service signals, developed based on RTKLIB. Built with C/C++ and CMake for high efficiency and cross-platform compatibility.
+# RTKLIB-B2b
+An open-source C/C++ toolkit that extends the functionalities of RTKLIB, specifically designed to decode proprietary binary PPP-B2b correction streams and associated navigation messages from prevalent GNSS receivers, and to integrate the decoded corrections for precise point positioning (PPP) using the BeiDou Navigation Satellite System (BDS) PPP-B2b service.
 
 ## 🚀 Core Features
 
 ### PPP-B2b Decoding
-- ​**Hardware Support**
-  - ComNav(SinoGNSS) receivers (e.g. K803W)
-  - Unicore receivers (e.g. UM980)
+- ​**Receiver Support**
+  - ComNav Technology (ComNav) receivers (e.g. K803W)
+  - Unicore Communications (Unicore) receivers (e.g. UM980)
   
-- ​**Data Formats**
+- ​**Decoded Data**
   - Proprietary binary PPP-B2b correction streams
-  - GPS LNAV/BDS CNAV1 broadcast ephemerides
+  - GPS Legacy Navigation (LNAV) messages
+  - BDS B1C signal NAV messages (B-CNAV1)
   
 - ​**Operation Modes**
   - Real-time decoding
   - Post-processing decoding
   
 - ​**Output Format**
-  - Extended ASCII text compatible with BNC (BKG Ntrip Client)
+  - Extended, BKG Ntrip Client (BNC)-compatible ASCII format
 
 ### PPP Positioning
 - ​**Positioning Modes**
@@ -27,6 +28,9 @@ An open-source software toolkit for decoding and positioning using BeiDou-3 (BDS
 - ​**Satellite Systems**
   - BDS-only mode
   - GPS+BDS combined mode
+  
+- ​**Positioning Accuracy**
+  - Decimeter-level PPP using PPP-B2b corrections
 
 ## 🌍 Cross-Platform Support
 | Platform       | Real-time | Embedded Platforms  | Recommended Usage            |
@@ -68,28 +72,31 @@ This collection supports two key application scenarios: ​**real-time playback 
 1. Dataset 1 for testing real-time module via `--playback` mode  
 2. Dataset 2 for post-processing validation with precise reference  
 
+## 📄 Citation
+
+If you use RTKLIB-B2b in your research, please cite our paper:
+
+> Liu C, et al. RTKLIB-B2b: Open-source Real-Time Decoding Module for BDS-3 PPP-B2b in RTKLIB. *Measurement Science and Technology*, 2026.  
+> DOI: [10.1088/1361-6501/ae58c8](https://doi.org/10.1088/1361-6501/ae58c8)
+
+```bibtex
+@article{liu2026rtklib_b2b,
+  title={RTKLIB-B2b: Open-source Real-Time Decoding Module for BDS-3 PPP-B2b in RTKLIB},
+  author={Liu, Chunbo and others},
+  journal={Measurement Science and Technology},
+  year={2026},
+  doi={10.1088/1361-6501/ae58c8}
+}
+```
+
 ## ❓ Support & Feedback
-🚧 ​**Beta Testing Notice**: This software is currently in active development phase.
-ℹ️ ​**Detailed are description in the [User Manual](manual/RTKLIB-B2b_UserManual.pdf).**
-ℹ️ ​**Developers in China:https://gitee.com/liu-chunbobo/RTKLIB-B2b.git**
+ℹ️ ​**Detailed description in the [User Manual](manual/RTKLIB-B2b_UserManual.pdf).**  
+ℹ️ ​**Developers in China: https://gitee.com/liu-chunbobo/RTKLIB-B2b.git**
 
 ## 📜 License
 
 [![GPLv3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
+Copyright (C) 2024-2026 Chunbo Liu / APM, CAS
 
-RTKLIB-B2b - GNSS PPP-B2b decoding and positioning toolkit
-Copyright (C) 2024 [Chunbo Liu/APM,CAS]
-
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program.  If not, see <https://www.gnu.org/licenses/>.
+This project is licensed under the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0). You are free to use, modify, and distribute this software under the terms of GPLv3. See the [LICENSE](LICENSE) file for details.

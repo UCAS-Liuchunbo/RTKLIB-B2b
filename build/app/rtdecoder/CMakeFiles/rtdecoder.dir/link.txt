@@ -1,1 +1,0 @@
-/usr/bin/gcc  -g -g   CMakeFiles/rtdecoder.dir/rtdecoder.c.o  -o ../../../bin/rtdecoder  ../../../lib/libB2bLib.a -lm -lpthread 

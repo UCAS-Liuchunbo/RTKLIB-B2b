@@ -1,0 +1,26 @@
+Post-processing B2b Decoder Usage
+===================================
+
+Usage:
+  ./postdecoder [-U|-S] -in B2b_filepath [-out B2bSSR_resultpath]
+
+Options:
+  -U              Unicore receiver format (e.g. UM980)
+  -S              SinoGNSS receiver format (e.g. K803W)
+  -in  filepath   Input PPP-B2b binary data file (required)
+  -out filepath   Output B2bSSR result file (optional, defaults to <input>.B2bSSR)
+
+Example:
+  ./postdecoder -U -in Unicore_2024360.B2bBin -out Unicore_2024360.B2bssr
+
+This will decode the Unicore PPP-B2b binary file and generate the SSR correction
+output in ASCII format.
+
+If -out is not specified, the output file will be named as:
+  Unicore_2024360.B2bBin.B2bSSR
+
+Sample Data:
+  Unicore_2024360.B2bBin  - Unicore UM980 PPP-B2b binary data (DOY 360, 2024)
+
+Reference Output:
+  example_out.zip          - Expected decoding results for verification

@@ -1,1 +1,0 @@
-/usr/bin/gcc  -g -g   CMakeFiles/rtppp.dir/rtapp.c.o  -o ../../../bin/rtppp  ../../../lib/libB2bLib.a -lm -lpthread 
